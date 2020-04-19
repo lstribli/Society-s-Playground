@@ -22,9 +22,7 @@ li {
   display: flex;
   padding: 20px;
 }
-.logo > img {
-  width: 50px;
-}
+
 header {
   display: flex;
   align-items: center;
@@ -36,7 +34,15 @@ header {
   font-size: 20px;
   color: rgba(250, 62, 4);
 }
-
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+ 
+}
 h1 {
   display: flex;
   flex-direction: row;
@@ -83,12 +89,12 @@ main {
   justify-content: center;
 }
 .product {
-  display: flex;
+  display: none;
   padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 10px solid whitesmoke;
+  border: 5px solid whitesmoke;
   border-radius: 10px;
   margin-top: 25px;
   border-radius: 10px;
@@ -99,12 +105,12 @@ main {
   font-style: bold;
   background-color: black;
 }
+
 p {
   display: flex;
-  padding:10px;
-  flex-direction:column;
-  justify-content:center;
-  
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
 }
 footer {
   display: flex;
@@ -120,19 +126,19 @@ footer {
   position: static;
   list-style: none;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .social_icon {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 25px;
-  margin-right: 25px;
+  justify-content: space-around;
+  margin-left: 5px;
+  margin-right: 5px;
   color: rgba(250, 62, 4);
-  font-size: 50px;
+  font-size: 25px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   header {
     display: flex;
     flex-direction: row;
@@ -190,7 +196,7 @@ main {
   justify-content: center;
 }
 .product {
-  display: flex;
+  display: none;
   padding: 10px;
   margin-top: 5px;
   margin: 30px;
@@ -202,6 +208,7 @@ main {
   width: 500px;
   height: 500px;
 }
+
 .social {
   display: flex;
   width: 100%;
@@ -215,8 +222,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: rgba(250, 62, 4);
   font-size: 50px;
 }
@@ -284,13 +291,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-radius: 10px;
+  border-radius: 20px;
+  border-width: 10px;
   margin-top: 5px;
   margin-right: 50px;
   margin-left: 50px;
   width: 500px;
   height: 500px;
 }
+
 .social {
   display: flex;
   width: 100%;
